@@ -20,9 +20,12 @@ Instead of creating a new scene today, you'll be iterating on what you built las
 If you haven't got it, clone/pull the latest version of your lab repo from last week. Take a minute or so to refresh your memory of the project. Consider some of the big-picture design qualities of your level:
 
 * Does the player know where they are going?
+  * I have found that the player in Week 1 does know where they were going - and some people also explored every nook od the level, and some only explored some of them
 * Are there any "leaps of faith" or other times the player can't see where they are jumping to?
+  * From Week 1's short playtest, there wasn't any 'leap of faith' jumps at all in the level.
 * Are all the jumps or other necessary movements reasonably possible? If not, why?
-
+  * All jumps on the main path are easy and doable for everyone that played. Some areas off the main path required tricker jumps, as they are meant to be hidden and grant a sense of exploration.
+ 
 These questions are a bit hard to answer without any data. So it is time to play our game and start iterating!
 
 You will want to be taking notes throughout this lesson. We highly recommend you place your notes in the repo along with your project, such as adding a markdown file, a text file, or taking notes in a design journal you keep with you when working. 
@@ -33,10 +36,15 @@ Whatever you do, the important thing is that you are recording your design proce
 Let's begin by playing our level ourselves. In this initial play through, we're looking for any "bugs" in the level design. This is a process known as QA, and involves essentially checking if the software is behaving as expected. Although both QA and playtesting are forms of testing, and we will be doing them both here, it is important to understand the distinction between them. We will be covering this in a later week, so stay tuned!
 
 For your QA, play your level and answer the following questions:
-* Are there jumps that can't be made? 
+* Are there jumps that can't be made?
+  * All jumps in the level are 100% possible! 
 * Are there any opportunties for the player to get stuck and unable to progress?
+  * No, there is always a way to get back to any previous point in the level. I worked this out by going from the start to the end of the level and finding every secret area from the end to the start.
 * Can the player always see what they need to see? Does the camera ever "cut off" important information?
+  * The camera is always showing the next section of the level and never cuts off any information at all. There are some secret areas that are hard to see with the camera, and there is only 1 piece of geometry to reach it sometimes, but it's intentionally made that way to make the players feel a sense of discovery when playing!
 * Are there any other mechanical issues with your level that prevent the player from progressing, or cause the system to act in unexpected ways?
+  * From my testing, I haven't found any issues with the level in any way - maybe that might change with the 1st playtest however ;)
+    
 
 Make some notes on what needs to be changed to make your game playable.
 
@@ -51,8 +59,10 @@ Before passing the game onto another player, you'll need some idea of the design
 
 * Are you trying to make a challenging level? If so, what kind of challenge? Is it about quick reflexes and movement, or slow and deliberate path-choosing?
 * Do you instead want to make a more "chill" and exploratory experience, with more spaces for the player to take their time and enjoy the vibe?
+* 
+  * The game is not meant to be challenging - the world is meant to be explored, with intentional nooks and crannies to explore and have a look around. (Discovery / Exploration)
 
-Take a look at Quantic Foundary's Gamer Motivation Model (avaliable in the lecture slides) and select onr or two of these catergoies (Action, Mastery, Achievement, etc) to focus your design on.
+Take a look at Quantic Foundary's Gamer Motivation Model (avaliable in the lecture slides) and select one or two of these catergoies (Action, Mastery, Achievement, etc) to focus your design on.
 
 Jot down three questions that you will ask your player about these. They don't need to be too structured at this stage, but should avoid direct reference to your experience goals. For example:
 
